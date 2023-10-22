@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Contact.css">
+</head>
+<div class="announcement__text" data-text="livraison-gratuite-retour-possible-sous-7-jours-plus-de-20-000-clientes-satisfaites">
+    " LIVRAISON GRATUITE | Retour possible sous 7 jours | Plus de 20 000 clientes satisfaites "</div>
+    <div class="navbar">
+        <div>
+            <a href="index.html" class="left">Home</a>
+            <!-- <a href="Catalogue.html" class="left">Catalogue</a> -->
+            <a href="Soldes.html" class="left">Soldes</a>
+            <a href="Nouvelle-collection.html" class="left">Nouvelle-Collection</a>
+            <a href="FAQ.html" class="left">FAQ</a>
+            <a href="Contact.html" class="left"><i class="fas fa-user"></i></a>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        </div>
+    </div>
+    <body>
+        <!DOCTYPE html>
+<html>
+<head>
+    <title>Formulaire de contact</title>
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Contactez-nous</h2>
+
+<form id="contactForm">
+    <label for="name">Nom :</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">E-mail :</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="message">Message :</label><br>
+    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+    <input type="submit" value="Envoyer">
+</form>
+
+<div id="errorMessages" class="error"></div>
+
+<script>
+    // Validation du formulaire
+    const contactForm = document.getElementById("contactForm");
+    const errorMessages = document.getElementById("errorMessages");
+
+    contactForm.addEventListener("submit", function (event) {
+        let valid = true;
+        errorMessages.innerHTML = "";
+
+        const name = document.getElementById("name");
+        const email = document.getElementById("email");
+        const message = document.getElementById("message");
+
+        if (name.value.trim() === "") {
+            errorMessages.innerHTML += "Le champ Nom est requis.<br>";
+            valid = false;
+        }
+
+        if (email.value.trim() === "" || !isValidEmail(email.value)) {
+            errorMessages.innerHTML += "L'adresse e-mail n'est pas valide.<br>";
+            valid = false;
+        }
+
+        if (message.value.trim() === "") {
+            errorMessages.innerHTML += "Le champ Message est requis.<br>";
+            valid = false;
+        }
+
+        if (!valid) {
+            event.preventDefault();
+        }
+    });
+
+    // Fonction pour vérifier la validité de l'e-mail
+    function isValidEmail(email) {
+        const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+        return emailRegex.test(email);
+    }
+</script>
+<script src="Contact.js"></script>
+    </body>
+
+    <footer class="foter">
+
+        <div class="logo">
+
+            <ul>
+                <li><a href="#">AIDE & INFORMATION</a></li>
+                <li><a href="#">Assistance</a></li>
+                <li><a href="#">suivi commande</a></li>
+                <li><a href="#">ASOS Premier</a></li>
+            </ul>
+
+        </div>
+        <div class="part1">
+            <ul>
+                <li><a href="#">À PROPOS D'ASOS</a></li>
+                <li><a href="#">À propos d'ASOS</a></li>
+                <li><a href="#">À propos d'ASOS</a></li>
+
+            </ul>
+        </div>
+        <div class="part2">
+            <ul>
+                <li>ENCORE PLUS D’ASOS</li>
+                <li><a href="#">soldes </a></li>
+                <li><a href="#">responsabilité des entreprises</a></li>
+                <li><a href="#">black Friday</a></li>
+            </ul>
+
+        </div>
+        <div class="part3">
+            <ul>
+                <li><a href="#">SÉLECTIONNEZ LE PAYS</a></li>
+                <li> <a href="#">changer</a></li>
+            </ul>
+
+        </div>
+</div>
+
+</footer>
+<div>
+    <p class="Mylog">2022-2023@</p>
+</div>
+
+</div>
+
+</html>

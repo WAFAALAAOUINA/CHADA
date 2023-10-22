@@ -1,0 +1,145 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.announcement__text {
+    background-color:rgb(237, 120, 120); 
+    font-size: 12px;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    display: block;
+    padding: 7px 20px 6px;
+    transition: opacity .75s ease;
+    text-align: center;
+}
+.left {
+    float: left;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 0 10px  ;
+    position: relative; /* Pour positionner la ligne de soulignement */
+    color: #000;
+    font-size:x-large;  
+}
+.left:hover::after {
+    content:"";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px; /* Hauteur de la ligne de soulignement */
+    background-color: #000; /* Couleur de la ligne de soulignement */
+}
+
+    
+    
+.navbar {
+    display: flex;
+    justify-content:flex-end;
+    font-size: 10%;
+    container: 10%;
+
+}
+
+.navbar a {
+
+    color: rgb(19, 2, 2);
+    text-align: center;
+    padding: 14px 16px; 
+    text-decoration: none;
+
+}
+
+  
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10%;
+}
+.foter {
+    display: flex;
+     background-color:rgb(237, 120, 120);
+    background-size: cover;
+    /* margin-top: 400px; */
+    /* Redimensionner l'image de manière à la couvrir  */
+      width: 100%;
+      height: 40vh;
+    
+    
+
+
+}
+
+.logo {
+    color: black;
+    font-weight: 10px;
+
+    margin-bottom: 200px;
+}
+
+.foter ul {
+    padding: 50px;
+    list-style: none;
+    /* vous supprimez complètement les marqueurs par défaut */
+}
+
+.foter li {
+    padding-bottom: 20px;
+}
+
+
+
+.Quiq {
+    font-size: 30PX;
+    font-weight: 300PX;
+}
+.Mylog {
+
+    text-align: center;
+    background-color: rgb(103, 110, 103);
+    /* margin-top: -100PX; */
+    height: 70%;
+    width: 100%;
+}
+
+
+.catalogue p{
+    text-align: center;
+    font-size:50px;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    text-decoration: underline;
+
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);    
+    gap: 3%;
+    align-content: space-between;
+    margin-bottom: 10%;
+}
+
+.container p{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30%;
+}
+.containerimg:hover {
+        transform: scale(1.1); /* Applique un agrandissement au survol */
+        /* Autres styles de survol, par exemple, une ombre, un changement de couleur de fond, etc. */
+      }
+ .img{
+    width: 70vh;
+    height: 70%;
+    
+}
+    

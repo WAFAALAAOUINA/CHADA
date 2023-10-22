@@ -1,0 +1,180 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.announcement__text {
+    background-color:rgb(237, 120, 120); 
+    font-size: 12px;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    display: block;
+    padding: 7px 20px 6px;
+    transition: opacity .75s ease;
+    text-align: center;
+}
+.left {
+    float: left;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 0 10px  ;
+    position: relative; /* Pour positionner la ligne de soulignement */
+    color: #000;
+    font-size:x-large;  
+}
+.left:hover::after {
+    content:"";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px; /* Hauteur de la ligne de soulignement */
+    background-color: #000; /* Couleur de la ligne de soulignement */
+}
+
+    
+    
+.navbar {
+    display: flex;
+    justify-content:flex-end;
+    font-size: 10%;
+    container: 10%;
+
+}
+
+.navbar a {
+
+    color: rgb(19, 2, 2);
+    text-align: center;
+    padding: 14px 16px; 
+    text-decoration: none;
+
+}
+
+  
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10%;
+}
+.foter {
+    display: flex;
+    justify-content: space-between;
+     background-color:rgb(237, 120, 120);
+    background-size: cover;
+    /* margin-top: 400px; */
+    /* Redimensionner l'image de manière à la couvrir  */
+      width: 100%;
+      height: 40vh;
+    
+    
+
+
+}
+
+.logo {
+    color: black;
+    /* font-weight: ; */
+
+    margin-bottom: 100%;
+}
+
+.foter ul {
+     padding: 10%;
+    list-style: none; 
+    /* vous supprimez complètement les marqueurs par défaut */
+
+}
+
+.foter li {
+    padding-bottom: 10%;
+}
+
+
+
+.Quiq {
+    font-size: 20%;
+    font-weight: 50%;
+}
+
+.Mylog {
+
+    text-align: center;
+    background-color: rgb(103, 110, 103);
+    /* margin-top: -100PX; */
+    height: 70%;
+    width: 100%;
+}
+
+.Soldes p{
+    font-size: 3rem;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 5%;
+
+}
+ 
+ 
+  .container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+     grid-template-rows:repeat(3, 1fr); 
+   gap: 10px;
+}
+
+.column {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10%;
+}
+
+.item {
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 15%;
+}
+
+.item p {
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    transition: all 0.3s ease;
+    margin-bottom: 10%;
+    text-align: center;
+    font-size: large;
+}
+
+.item:hover p {
+    display: block;
+}
+.item img{
+    width: 80%;
+    height: 100%;
+    margin-top: 5%;
+    margin-left: 12%;
+}
+
+
+.Prix-régulier{
+    font-size: larger;
+    font-weight: bold;
+    color: black;
+}
+
+     
+
