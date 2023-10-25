@@ -19,7 +19,7 @@
     height: 70px;
     align-items: center;
     list-style: none;
-    color: #df246e;
+    color: rgb(237, 120, 120);;
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -116,7 +116,7 @@ a {
 }
 .burger-list {
     display: none;
-    background-color: #2f2f2f;
+    background-color:rgb(237, 120, 120);;
     border-top: #ffffff;
     position: absolute;
     height: 100px;
@@ -133,7 +133,7 @@ a {
     text-align: center;
     border-radius: 7px;
     padding: 10px;
-    color: #ffffff;
+    color: #0e0d0d;
     font-weight: 500;
     font-size: 14px;
     text-align: center;
@@ -324,7 +324,7 @@ body{
     .nav_links {
         display: flex;
         flex-direction: column;
-        background: #e87c7c;
+        background: rgb(237, 120, 120);
         width: 100%;
         max-height: 0;
         overflow: hidden;
