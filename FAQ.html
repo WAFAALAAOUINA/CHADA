@@ -5,53 +5,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Questions et Réponses</title>
     <link rel="stylesheet" href="FAQ.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     
 </head>
+<bod>
 <div class="announcement__text" data-text="livraison-gratuite-retour-possible-sous-7-jours-plus-de-20-000-clientes-satisfaites">
     " LIVRAISON GRATUITE | Retour possible sous 7 jours | Plus de 20 000 clientes satisfaites "</div>
-    <div class="navbar">
-        <div>
-            <a href="index.html" class="left">Home</a>
-            <a href="Soldes.html" class="left">Soldes</a>
-            <a href="Nouvelle-collection.html" class="left">Nouvelle-Collection</a>
-             <a href="FAQ.html" class="left">FAQ</a>
-            <a href="Contact.html" class="left"><i class="fas fa-user"></i></a>
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-        </div>
+
+    <nav class="">
+		<div class="navbar-mobile">
+			<div class="navbar-mobile-container">
+				<div class="navbar-mobile-right">
+					<img src="./image/logo.png" alt="logo" id="logo">
+				</div>
+				<div class="burger-menu" onclick="toggleMenu()">
+					<i class="fa fa-bars"></i>
+				</div>
+
+			</div>
+			<hr>
+			<div class="burger-list">
+				<ul>
+					<li><a href="./index.html">Home</a></li>
+					<li><a href="./soldes.html">Soldes</a></li>
+					<li><a href="./FAQ.html">FAQ</a></li>
+                    <li><a href="./Nouvelle-collection.html">Nouvelle Collection</a></li>
+					<li><a href="./Contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="navbar-discktop">
+			<ul class="navbar">
+
+				<li><a href="./index.html">Home</a></li>
+				<li><a href="./soldes.html">Soldes</a></li>
+                <li><a href="./FAQ.html">FAQ</a></li>
+				<li class="nav-logo"><img src="./image/logo.png" alt="logo" id="logo"></li>
+				<li><a href="./Nouvelle-collection.html">Nouvelle Collection</a></li>
+				<li><a href="./Contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+       
+    <div class="container">
+        <h1 class="title">
+            FAQ
+        </h1>
+        <main class="accordion">
+            <div class="img-img">
+                 <img src="image/kq8zouzb.png" alt="" id="accordion-img"> 
+                 <!-- <img src="image/zj0fxsik.png" alt="" class="accordion-imge">  -->
+            </div>
+            <div class="content-accordion">
+                <div class="question-answer">
+                    <div class="question">
+                        <h3 class="title-question">
+                            Comment passer une commande ?
+                        </h3>
+                        <button class="question-btn">
+                            <span class="up-icon">
+                                <i class="fas fa-chevron-up"></i>
+                            </span>
+                            <span class="down-icon">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="answer">
+                        <p>Choisir vos produits et les ajouter au panier.<br>
+                            
+                        </br> - Saisir les informations nécessaires à la livraison <br>
+                            
+                    </br> - Confirmer la livraison via Amana.<br>
+                            
+                            - Le paiement sera fait à la livraison.</br>
+                            </p>
+                    </div>
+                </div>
+                <div class="question-answer">
+                    <div class="question">
+                        <h3 class="title-question">
+                            Comment vais-je payer ?
+                        </h3>
+                        <button class="question-btn">
+                            <span class="up-icon">
+                                <i class="fas fa-chevron-up"></i>
+                            </span>
+                            <span class="down-icon">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="answer">
+                        <p>Le paiement sera fait à la livraison.</p>
+                    </div>
+                </div>
+            
+                <div class="question-answer">
+                    <div class="question">
+                        <h3 class="title-question">
+                            Vous avez passé une commande mais vous n’avez pas reçu d’appel ?
+                        </h3>
+                        <button class="question-btn">
+                            <span class="up-icon">
+                                <i class="fas fa-chevron-up"></i>
+                            </span>
+                            <span class="down-icon">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="answer">
+                        <p>Notre service client est à votre disposition 
+                            de 8h à 13h et de 14h à 17h du lundi au vendredi
+                             et le samedi matin via le numéro suivant : 05 39 38 63 78.</p>
+                    </div>
+                </div>
+                <div class="question-answer">
+                    <div class="question">
+                        <h3 class="title-question">
+                            Les prix sont-ils négociables ?
+                        </h3>
+                        <button class="question-btn">
+                            <span class="up-icon">
+                                <i class="fas fa-chevron-up"></i>
+                            </span>
+                            <span class="down-icon">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="answer">
+                        <p>Les prix ne sont pas négociables. 
+                            Nous vous assurons néanmoins 
+                            que les prix proposés correspondent 
+                            parfaitement à la qualité de nos produits.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
     </div>
-
-
-    <style>
-        .question {
-            margin: 10px;
-        }
-        .answer {
-            display: none;
-        }
-    </style>
-<body>
-
-    <div class="question">
-        <p>Question 1: Quelle est la capitale de la France ?</p>
-        <button onclick="showAnswer(1)">Afficher la réponse</button>
-        <p class="answer">Réponse 1: La capitale de la France est Paris.</p>
-    </div>
-    
-    <div class="question">
-        <p>Question 2: Quelle est la planète la plus proche du soleil ?</p>
-        <button onclick="showAnswer(2)">Afficher la réponse</button>
-        <p class="answer">Réponse 2: La planète la plus proche du soleil est Mercure.</p>
-    </div>
-<script>
-    
-        function showAnswer(questionNumber) {
-            const answer = document.querySelector(`.question:nth-child(${questionNumber}) .answer`);
-            answer.style.display = 'block';
-        }
-    </script>
-    <script src="FAQ.js"></script>
-</body>
-
 
 
 
@@ -98,7 +191,9 @@
 <p class="Mylog">2022-2023@</p>
 </div>
 
-</div>
+
+<script src="page.js"></script>
 
 
+</body>
 </html>

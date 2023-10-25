@@ -12,50 +12,159 @@
     transition: opacity .75s ease;
     text-align: center;
 }
-.left {
-    float: left;
-    font-size: 20px;
-    text-decoration: none;
-    margin: 0 10px  ;
-    position: relative; /* Pour positionner la ligne de soulignement */
-    color: #000;
-    font-size:x-large;  
-}
-.left:hover::after {
-    content:"";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px; /* Hauteur de la ligne de soulignement */
-    background-color: #000; /* Couleur de la ligne de soulignement */
+* {
+    margin: 0px;
+    padding: 0px;
 }
 
-    
-    
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Karla" sans-serif; */
+
+}
+/* navbar */
 .navbar {
+    /* position: fixed; */
+    background-color:white;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    list-style: none;
+    color: #df246e;
+    font-weight: bold;
     display: flex;
-    justify-content:flex-end;
-    font-size: 10%;
-    container: 10%;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
 
 }
+@media screen and (max-width: 650px) {
+    .zone {
+      width: 100%;
+      display: block;
+    }
+  }
+  @media screen and (max-width: 650px) {
+    .plat4{
+      width: 100%;
+      display: block;
+    }
+  }
+  .navbar-center {
+    width: 100%;
+}
+.navbar ul {
+    display: flex;
 
-.navbar a {
+    justify-content: space-around;
+    list-style: none;
+}
+.navbar-mobile {
+    display: none;
+    cursor: pointer
+}
 
-    color: rgb(19, 2, 2);
+.fa {
+    font-size: 30px !important;
+}
+
+.navbar-mobile-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 0 20px;
+}
+
+@media (max-width:800px) {
+    .navbar-mobile {
+        background-color:black;
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+    }
+}
+
+.nav-logo {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo {
+    width: 80px;
+    height: 70px;
+    padding: 5px;
+}
+.logos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+
+
+
+a:hover {
+    color: white;
+}
+
+
+
+.burger-list {
+    display: none;
+    background-color: #2f2f2f;
+    border-top: #ffffff;
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    right: 0;
+    z-index: 100;
+}
+
+
+
+.burger-list ul {
+    list-style: none;
+    position: absolute;
     text-align: center;
-    padding: 14px 16px; 
-    text-decoration: none;
-
+    border-radius: 7px;
+    padding: 10px;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-  
+
+
 
 a {
-    text-decoration: none;
-    color: black;
+    all: unset;
+    cursor: pointer;
+
+
+    
+    
+
+
 }
+
+
 
 .hero {
     display: flex;
@@ -72,6 +181,7 @@ a {
     /* Redimensionner l'image de manière à la couvrir  */
       width: 100%;
       height: 40vh;
+      
     
     
 
@@ -110,4 +220,64 @@ a {
     /* margin-top: -100PX; */
     height: 70%;
     width: 100%;
+}
+body{
+    background-image: url(image/vetement.jpg);
+    
+}
+
+#contactForm{
+   
+    /* background-image: url(image/vetement.jpg); */
+    text-align: center;
+    white-space:100%;
+
+
+    
+
+
+}
+#contactForm h2{
+    font-size: 100%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.contactForm{
+    font-size: 100%;
+}
+textarea#message{
+    width: 60%;
+    height: 100%;
+    padding-bottom: 10%;
+    
+
+}
+input#name{
+    height: 10%;
+    font-size: 100%;
+    width: 30%;
+}
+input#email{
+    height: 10%;
+    font-size: 100%;
+    width: 30%;
+}
+#Envoyer{
+    font-size:xx-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 10%;
+    font-size: 100%;
+    width: 10%;
+    margin-bottom: 10%;
+
+}
+/* #contactForm.name.email.message{
+    font-size: 100%;
+
+} */
+#contactForm {
+font-size: xx-large;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     
 }

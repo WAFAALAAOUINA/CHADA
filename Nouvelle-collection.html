@@ -6,25 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="Nouvelle-collection.css">
-    <link rel="stylesheet" href="Nouvelle-collection.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+ 
 </head>
+<body>
+    
 <div class="announcement__text" data-text="livraison-gratuite-retour-possible-sous-7-jours-plus-de-20-000-clientes-satisfaites">
     " LIVRAISON GRATUITE | Retour possible sous 7 jours | Plus de 20 000 clientes satisfaites "</div>
-    <div class="navbar">
-        <div>
-            <a href="index.html" class="left">Home</a>
-            <!-- <a href="Catalogue.html" class="left">Catalogue</a> -->
-            <a href="Soldes.html" class="left">Soldes</a>
-            <a href="Nouvelle-collection.html" class="left">Nouvelle-Collection</a>
-            <a href="FAQ.html" class="left">FAQ</a>
-            <a href="Contact.html" class="left"><i class="fas fa-user"></i></a>
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-        </div>
-    </div>
+    
+
+    <nav class="">
+		<div class="navbar-mobile">
+			<div class="navbar-mobile-container">
+				<div class="navbar-mobile-right">
+					<img src="./image/logo.png" alt="logo" id="logo">
+				</div>
+				<div class="burger-menu" onclick="toggleMenu()">
+					<i class="fa fa-bars"></i>
+				</div>
+
+			</div>
+			<hr>
+			<div class="burger-list">
+				<ul>
+					<li><a href="./index.html">Home</a></li>
+					<li><a href="./soldes.html">Soldes</a></li>
+					<li><a href="./FAQ.html">FAQ</a></li>
+                    <li><a href="./Nouvelle-collection.html">Nouvelle Collection</a></li>
+					<li><a href="./Contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="navbar-discktop">
+			<ul class="navbar">
+
+				<li><a href="./index.html">Home</a></li>
+				<li><a href="./soldes.html">Soldes</a></li>
+                <li><a href="./FAQ.html">FAQ</a></li>
+				<li class="nav-logo"><img src="./image/logo.png" alt="logo" id="logo"></li>
+				<li><a href="./Nouvelle-collection.html">Nouvelle Collection</a></li>
+				<li><a href="./Contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+       
 
 
-
-    <body>
+ 
         <div class="container">
             <div class="grid">
                 <div class="item">
@@ -104,9 +132,6 @@
         </div>
 
 
-    </body>
-
-
 
     <footer class="foter">
 
@@ -150,7 +175,8 @@
 <div>
     <p class="Mylog">2022-2023@</p>
 </div>
+<script src="page.js"></script>
+</body>
 
-</div>
 
 </html>
