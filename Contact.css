@@ -2,6 +2,9 @@
     margin: 0px;
     padding: 0px;
 }
+.footer{
+    padding: 48px;
+}
 .announcement__text {
     background-color:rgb(237, 120, 120); 
     font-size: 12px;
@@ -12,11 +15,11 @@
     transition: opacity .75s ease;
     text-align: center;
 }
-* {
-    margin: 0px;
-    padding: 0px;
-}
-
+html,body{
+    padding:0;
+    margin:0;
+  }
+  
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&display=swap');
 * {
     margin: 0;
@@ -118,7 +121,7 @@
 
 
 a:hover {
-    color: white;
+    color: rgb(20, 19, 19);
 }
 
 
@@ -160,12 +163,7 @@ a:hover {
 a {
     all: unset;
     cursor: pointer;
-
-
-    
-    
-
-
+    color: #100f0f;
 }
 
 
@@ -176,7 +174,7 @@ a {
     align-items: center;
     padding: 10%;
 }
-.foter {
+.footer {
     display: flex;
     justify-content: space-between;
      background-color:rgb(237, 120, 120);
@@ -199,14 +197,14 @@ a {
     margin-bottom: 100%;
 }
 
-.foter ul {
+.footer ul {
      padding: 10%;
     list-style: none; 
     /* vous supprimez complètement les marqueurs par défaut */
 
 }
 
-.foter li {
+.footer li {
     padding-bottom: 10%;
 }
 
@@ -280,12 +278,60 @@ input#email{
     
 
 }
-/* #contactForm.name.email.message{
-    font-size: 100%;
 
-} */
+
+.foter {
+    display: flex;
+    justify-content: space-between;
+     background-color:rgb(237, 120, 120);
+    background-size: cover;
+    padding: 48px !important;
+  width: 100% !important;
+  height: 40vh;
+   
+}
+.foter ul {
+    padding: 10%;
+   list-style: none; 
+}
+   @media (max-width:900px) {
+    *{
+      margin: 0px !important;
+      padding: 0px !important;
+     
+     
+  }
+  body,html{
+    width: 100% !important;
+  }
+  .foter{
+    flex-direction: column;
+    justify-content: space-between;
+  }
+   
+   
+}
+
+.foter li {
+   padding-bottom: 10%;
+}
+
 #contactForm {
 font-size: xx-large;
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
      
+}
+@media (max-width:900px) {
+    *{
+      margin: 0px !important;
+      padding: 0px !important;
+      .footer{
+
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      body,html{
+        width: 100% !important;
+      }
+    }
 }
